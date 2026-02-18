@@ -21,7 +21,7 @@ export default function Home() {
               Verkehrstherapie
             </h2>
             <p className="text-lg mb-6 max-w-md opacity-90">
-              Professionelle Begleitung zurück auf den richtigen Weg
+              Professionelle Begleitung zurück auf den richtigen Weg – persönlich oder online per Videotelefonie
             </p>
             <span className="border-2 border-white px-6 py-2 text-sm uppercase tracking-widest group-hover:bg-white group-hover:text-primary transition-colors">
               Mehr erfahren

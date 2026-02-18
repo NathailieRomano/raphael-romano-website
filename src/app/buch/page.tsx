@@ -55,6 +55,36 @@ export default function Buch() {
         </div>
       </section>
 
+      {/* Kauflinks */}
+      <section className="max-w-4xl mx-auto px-6 py-16 border-b border-primary/10">
+        <h2 className="text-2xl font-bold mb-8 text-center text-primary font-(family-name:--font-serif)">
+          Jetzt bestellen
+        </h2>
+        <div className="flex flex-wrap justify-center gap-4">
+          {[
+            { name: "Ex Libris", url: "https://www.raphaelromano.ch/redirect-exlibris" },
+            { name: "Orell Füssli", url: "https://www.raphaelromano.ch/redirect-orellfuessli" },
+            { name: "Amazon", url: "https://www.raphaelromano.ch/redirect-amazon" },
+            { name: "Weltbild", url: "https://www.raphaelromano.ch/redirect-weltbild" },
+            { name: "Osiander", url: "https://www.raphaelromano.ch/redirect-osiander" },
+            { name: "bücher.de", url: "https://www.raphaelromano.ch/redirect-buecherde" },
+            { name: "Morawa", url: "https://www.morawa.at/detail/ISBN-9783038830795/Romano-Raphael/Von-Menschen-und-Eseln" },
+            { name: "Bücherstube", url: "https://www.buecherstube.at/list?back=fc7249560e23fbd79ad78ecf2a1f03c3&xid=38346151" },
+            { name: "Moluna", url: "https://www.raphaelromano.ch/redirect-moluna" },
+          ].map((shop) => (
+            <a
+              key={shop.name}
+              href={shop.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-primary/20 rounded-lg px-5 py-3 text-sm font-medium text-primary hover:bg-accent hover:text-white hover:border-accent transition-colors"
+            >
+              {shop.name}
+            </a>
+          ))}
+        </div>
+      </section>
+
       {/* Zitate */}
       <section className="max-w-4xl mx-auto px-6 py-16">
         <h2 className="text-2xl font-bold mb-10 text-center text-primary font-(family-name:--font-serif)">

@@ -9,7 +9,7 @@ export default function Home() {
         {/* Verkehrstherapie Tile */}
         <Link href="/verkehrstherapie" className="relative group overflow-hidden min-h-[50vh] md:min-h-[70vh]">
           <Image
-            src="/images/hero-therapie-waldweg.jpg"
+            src="/images/hero-therapie-bergpass.png"
             alt="Verkehrstherapie"
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-105"

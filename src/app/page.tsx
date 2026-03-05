@@ -1,9 +1,48 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Raphael Romano – Verkehrstherapie",
+  alternateName: "Raphael Romano",
+  description:
+    "Verkehrstherapie, Psychotherapie und Notfallpsychologie in Heimberg bei Thun. Persönlich oder online per Videotelefonie.",
+  url: "https://raphaelromano.ch",
+  telephone: "+41787140707",
+  email: "info@raphaelromano.ch",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Räbacher 4",
+    addressLocality: "Heimberg",
+    postalCode: "3627",
+    addressCountry: "CH",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 46.7944,
+    longitude: 7.6042,
+  },
+  sameAs: [
+    "https://www.facebook.com/Von-Menschen-und-Eseln",
+    "https://instagram.com/raphaelromano777",
+  ],
+  image: "https://raphaelromano.ch/images/hero-therapie-bergpass.png",
+  priceRange: "$$",
+  areaServed: {
+    "@type": "GeoCircle",
+    geoMidpoint: { "@type": "GeoCoordinates", latitude: 46.7944, longitude: 7.6042 },
+    geoRadius: "50000",
+  },
+};
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Hero Tiles */}
       <section className="grid md:grid-cols-2 min-h-[70vh]">
         {/* Verkehrstherapie Tile */}

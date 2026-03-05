@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   description:
     "Raphael Romano – Verkehrstherapeut, Psychotherapeut und Autor von «Von Menschen und Eseln». Verkehrstherapie in Heimberg, Schweiz.",
   metadataBase: new URL("https://raphaelromano.ch"),
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "32x32" },
@@ -22,6 +25,18 @@ export const metadata: Metadata = {
     type: "website",
     locale: "de_CH",
     siteName: "Raphael Romano",
+    images: [
+      {
+        url: "/images/hero-therapie-bergpass.png",
+        width: 1200,
+        height: 630,
+        alt: "Raphael Romano – Verkehrstherapie",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/images/hero-therapie-bergpass.png"],
   },
 };
 

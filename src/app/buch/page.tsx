@@ -70,6 +70,76 @@ export default function Buch() {
         </p>
       </section>
 
+      {/* Hörproben */}
+      <section className="max-w-4xl mx-auto px-6 py-16 border-b border-primary/10">
+        <h2 className="text-2xl font-bold mb-4 text-center text-primary font-(family-name:--font-serif)">
+          Hörproben
+        </h2>
+        <p className="text-center text-primary/60 mb-10">
+          Hören Sie rein — zwei Ausschnitte aus dem Buch, gelesen vom Autor.
+        </p>
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-lg font-semibold mb-3 text-primary">
+              Hörprobe
+            </h3>
+            <audio controls className="w-full" preload="metadata">
+              <source src="/audio/hoerprobe.mp3" type="audio/mpeg" />
+              Ihr Browser unterstützt kein Audio.
+            </audio>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold mb-3 text-primary">
+              Kapitel 20 — Vollständig
+            </h3>
+            <audio controls className="w-full" preload="metadata">
+              <source src="/audio/kapitel-20.mp3" type="audio/mpeg" />
+              Ihr Browser unterstützt kein Audio.
+            </audio>
+          </div>
+        </div>
+      </section>
+
+      {/* Presse & Medien */}
+      <section className="max-w-4xl mx-auto px-6 py-16 border-b border-primary/10">
+        <h2 className="text-2xl font-bold mb-4 text-center text-primary font-(family-name:--font-serif)">
+          Presse & Medien
+        </h2>
+        <p className="text-center text-primary/60 mb-10">
+          Radio-Interviews und Pressematerial zum Buch.
+        </p>
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-lg font-semibold mb-3 text-primary">
+              Interview — Radio Neo1
+            </h3>
+            <audio controls className="w-full" preload="metadata">
+              <source src="/audio/interview-radio-neo1.mp3" type="audio/mpeg" />
+              Ihr Browser unterstützt kein Audio.
+            </audio>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold mb-3 text-primary">
+              Interview — Radio BEO
+            </h3>
+            <audio controls className="w-full" preload="metadata">
+              <source src="/audio/interview-radio-beo.mp3" type="audio/mpeg" />
+              Ihr Browser unterstützt kein Audio.
+            </audio>
+          </div>
+          <div className="text-center pt-4">
+            <a
+              href="/downloads/pressetext.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border border-primary/20 rounded-lg px-6 py-3 text-sm font-medium text-primary hover:bg-accent hover:text-white hover:border-accent transition-colors"
+            >
+              📄 Pressetext herunterladen (PDF)
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Zitate */}
       <section className="max-w-4xl mx-auto px-6 py-16">
         <h2 className="text-2xl font-bold mb-10 text-center text-primary font-(family-name:--font-serif)">

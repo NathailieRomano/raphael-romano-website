@@ -61,8 +61,8 @@ export default function Buch() {
           Buch bestellen
         </h2>
         <p className="text-center text-lg text-primary/80 max-w-2xl mx-auto">
-          «Von Menschen und Eseln» ist direkt bei Raphael Romano erhältlich.
-          Nehmen Sie gerne{" "}
+          «Von Menschen und Eseln» ist direkt bei Raphael Romano erhältlich
+          — für CHF 25.– inkl. Gratisversand. Nehmen Sie gerne{" "}
           <a href="/kontakt" className="text-accent hover:underline font-medium">
             Kontakt
           </a>{" "}
